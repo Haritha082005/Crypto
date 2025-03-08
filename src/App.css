@@ -1,0 +1,268 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.App-header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Home Styles */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+.home h3 {
+  font-size: 1.5rem;
+  color: #a0b2d8;
+  margin: 20px 0;
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.crypto-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00d4ff;
+  color: #1a1a2e;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background: #00b8d4;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Crypto List Styles */
+.crypto-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crypto-list-title {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.search-container {
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.crypto-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.crypto-name h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.symbol {
+  color: #00d4ff;
+  font-size: 0.9rem;
+}
+
+.card-body p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.change {
+  font-size: 0.9rem;
+}
+
+.change.positive {
+  color: #00ff9d;
+}
+
+.change.negative {
+  color: #ff3366;
+}
+
+.volume,
+.supply {
+  color: #a0b2d8;
+}
+
+/* Pagination Styles */
+.pagination {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #00d4ff;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:disabled {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #00b8d4;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.page-info {
+  font-size: 1rem;
+  color: #a0b2d8;
+}
+
+/* Crypto Details Styles */
+.crypto-details {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-details h2 {
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+.timeframe-selector {
+  margin: 20px 0;
+}
+
+.timeframe-selector select {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+}
+
+.charts-container {
+  margin: 20px 0;
+}
+
+.year-chart {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.year-chart h3 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Loading State */
+.loading {
+  font-size: 1.2rem;
+  color: #00d4ff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
